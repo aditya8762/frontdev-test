@@ -4,13 +4,18 @@
     height: 100%;
 }
 mat-drawer{
-    width: 350px;
+    width: 275px;
+    color:white;
+    background-color: #111525;
 }
 
 mat-drawer-container {
     height: 100%;
+    background-color:#111525;
+
 }
 
 mat-drawer-content {
     padding: 2rem;
 }
+

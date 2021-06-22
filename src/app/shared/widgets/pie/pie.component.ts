@@ -38,6 +38,11 @@ export class PieComponent implements OnInit {
         }
       ]
     };
+    setTimeout(() => {
+      window.dispatchEvent(
+        new Event('resize')
+      );
+    },300);
   }
 
 }

@@ -18,12 +18,14 @@
                 </li>
                 <li>
                     <button mat-button [matMenuTriggerFor]="menu">
-                        <mat-icon>person_outline</mat-icon>
+                        <mat-icon>
+                            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="pic">
+                        </mat-icon>
                     </button>
                     <mat-menu #menu="matMenu">
-                        <button mat-menu-item1>
+                        <button mat-menu-item>
                             <mat-icon>exit_to_app</mat-icon>
-                            Signout
+                            signout
                         </button>
                     </mat-menu>
 

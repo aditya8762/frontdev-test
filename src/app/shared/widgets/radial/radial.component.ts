@@ -64,8 +64,8 @@ export class RadialComponent implements OnInit {
                 enabled: true,
                 color: '#333'
             },
-            lineWidth: 0,
-            tickInterval: 25,
+            lineWidth: 5,
+            tickInterval: 10,
             reversedStacks: false,
             endOnTick: true,
             showLastLabel: true
