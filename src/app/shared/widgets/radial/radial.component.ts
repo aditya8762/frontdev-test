@@ -66,7 +66,6 @@ export class RadialComponent implements OnInit {
             },
             lineWidth: 5,
             tickInterval: 10,
-            reversedStacks: false,
             endOnTick: true,
             showLastLabel: true
         },
@@ -75,7 +74,7 @@ export class RadialComponent implements OnInit {
                 stacking: 'normal',
                 borderWidth: 0,
                 pointPadding: 0,
-                groupPadding: 0.15
+                groupPadding: 0.1
             }
         },
         credits:{
