@@ -12,9 +12,9 @@ export class CircleComponent implements OnInit {
   
   chartOptions: {
     series: ApexNonAxisChartSeries;
-  chart: ApexChart;
-  labels: string[];
-  plotOptions: ApexPlotOptions;
+    chart: ApexChart;
+    labels: string[];
+    plotOptions: ApexPlotOptions;
   };
 
 
@@ -34,7 +34,7 @@ export class CircleComponent implements OnInit {
           }
         }
       },
-      labels: ["Total Applications"]
+      labels: ["70%"]
     };
     setTimeout(() => {
       window.dispatchEvent(

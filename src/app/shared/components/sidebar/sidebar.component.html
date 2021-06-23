@@ -11,11 +11,15 @@
     </div>
 <mat-divider></mat-divider>
      <h2 matSubheader>Pages</h2>
-     <a mat-list-item routerLinkActive="List-item-active" routerLink="/">Dashboard</a>
-     <a mat-list-item routerLinkActive="List-item-active" routerLink="/posts">Posts</a>
-     <a mat-list-item routerLinkActive="List-item-active" routerLink="/article">Article</a>
+     <a mat-list-item routerLinkActive="List-item-active" routerLink="/">
+        <mat-icon>dashboard</mat-icon>
+        Dashboard</a>
+     <a mat-list-item routerLinkActive="List-item-active" routerLink="/posts">
+        <mat-icon>trending_up</mat-icon>Posts</a>
+     <a mat-list-item routerLinkActive="List-item-active" routerLink="/article">
+        <mat-icon>view_module</mat-icon>Article</a>
 <mat-divider></mat-divider>
-    <h2 matSubheader>Tools</h2>
+    <h2 matSubheader>Contacts</h2>
     <a mat-list-item routerLinkActive="List-item-active" routerLink="/contacts">
         <mat-icon>import_contacts</mat-icon>
         Contacts
