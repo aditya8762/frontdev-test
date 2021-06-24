@@ -13,7 +13,7 @@ export class CircleComponent implements OnInit {
   chartOptions: {
     series: ApexNonAxisChartSeries;
     chart: ApexChart;
-    labels: string[];
+    labels: any;
     plotOptions: ApexPlotOptions;
   };
 
@@ -30,9 +30,10 @@ export class CircleComponent implements OnInit {
       plotOptions: {
         radialBar: {
           hollow: {
-            size: "60%"
+            size: "70%"
           }
         }
+        
       },
       labels: ["70%"]
     };

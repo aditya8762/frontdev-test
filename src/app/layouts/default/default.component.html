@@ -1,13 +1,16 @@
 <div class="content">
     <app-header (toggleSideBarForMe)="sideBarToggler()"></app-header>
-        <mat-drawer-container>
-            <mat-drawer mode="side" [opened]="sideBarOpen">
-                <app-sidebar></app-sidebar>
+        <mat-drawer-container id="sidenavContainer" fullscreen>
+            <mat-drawer mode="side" #sidenav id="sidenav" [class.menu-open]="sideBarOpen"
+            [class.menu-close]="!sideBarOpen"
+            opened>
+            <app-sidebar></app-sidebar>
             </mat-drawer>
-            <mat-drawer-content>
+            <mat-drawer-content [ngStyle]="{'margin-left.px': contentMargin }">
                 <router-outlet></router-outlet>
             </mat-drawer-content>
         </mat-drawer-container>
     <app-footer></app-footer>
 
 </div>
+ 

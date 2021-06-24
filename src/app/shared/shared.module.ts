@@ -19,6 +19,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgApexchartsModule } from "ng-apexcharts";
 import { PieComponent } from './widgets/pie/pie.component';
 import { AreaComponent } from './widgets/area/area.component';
+import { AdvpieComponent } from './widgets/advpie/advpie.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -27,7 +28,8 @@ import { AreaComponent } from './widgets/area/area.component';
     RadialComponent,
     CircleComponent,
     PieComponent,
-    AreaComponent
+    AreaComponent,
+    AdvpieComponent
   ],
   imports: [
     CommonModule,
@@ -51,7 +53,8 @@ import { AreaComponent } from './widgets/area/area.component';
     RadialComponent,
     CircleComponent,
     PieComponent,
-    AreaComponent
+    AreaComponent,
+    AdvpieComponent
   ]
 })
 export class SharedModule { }

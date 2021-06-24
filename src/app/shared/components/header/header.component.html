@@ -1,7 +1,7 @@
-<mat-toolbar color="primary">
+<mat-toolbar id="mat-menu-itemToolbar" color="primary">
     <mat-toolbar-row>
         <button mat-icon-button (click)="toggleSideBar()">
-            <mat-icon>menu</mat-icon>
+            <mat-icon>widgets</mat-icon>
         </button>
         <span>App Logo</span>
         <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
@@ -13,8 +13,14 @@
                 </li>
                 <li>
                     <button mat-icon-button>
-                        <mat-icon>sms</mat-icon>
+                        <mat-icon>notifications</mat-icon>
                     </button>
+                </li>
+                <li>
+                    <div class="text">
+                        <h2>ABC-XYZ</h2>
+                    </div>
+                    <!-- <h2>Aditya Pote</h2>     -->
                 </li>
                 <li>
                     <button mat-button [matMenuTriggerFor]="menu">

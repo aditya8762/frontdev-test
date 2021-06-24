@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DefaultComponent implements OnInit {
 
   sideBarOpen= true;
+  contentMargin = 240;
 
   constructor() { }
 
@@ -15,5 +16,12 @@ export class DefaultComponent implements OnInit {
 
   sideBarToggler() {
     this.sideBarOpen = !this.sideBarOpen;
+
+    if(!this.sideBarOpen){
+      this.contentMargin=70;
+    }
+    else{
+      this.contentMargin=240;
+    }
   }
 }
