@@ -18,7 +18,7 @@ export class RadialComponent implements OnInit {
       this.chartOptions =  {
         // colors: ['#FFD700', '#C0C0C0', '#CD7F32'],
         chart: {
-            height:360,
+            height:320,
             type: 'bar',
             backgroundColor:'#111525',
             borderRadius:8,
