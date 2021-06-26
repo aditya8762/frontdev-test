@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApexNonAxisChartSeries, ApexResponsive, ApexChart, ApexPlotOptions, ApexFill, ApexStroke } from 'ng-apexcharts';
+import { ApexNonAxisChartSeries, ApexResponsive, ApexChart, ApexPlotOptions, ApexFill, ApexStroke, ApexTitleSubtitle } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-widget-advpie',
@@ -14,61 +14,83 @@ export class AdvpieComponent implements OnInit {
     // responsive: ApexResponsive[];
     labels: any;
     plotOptions:ApexPlotOptions;
-    fill:ApexFill;
+    // fill:ApexFill;
     stroke:ApexStroke;
+    title:ApexTitleSubtitle
+    subtitle:ApexTitleSubtitle
   };
 
   constructor() { }
 
-  ngOnInit() {
-    this.chartOptions = {
-      series: [67],
-      chart: {
-      height: 350,
-      type: 'radialBar',
-      offsetY: -10
+  ngOnInit() {this.chartOptions = {
+    chart: {
+      height: 180,
+      width:320,
+      type: "radialBar",
     },
+    
+    series: [75],
+    title: {
+      text: 'Total Applications',
+      align: 'left',
+      margin: 10,
+      offsetX: -1,
+      offsetY: 0,
+      floating: false,
+      style: {
+        fontSize:  '18px',
+        fontWeight:  'bold',
+        fontFamily:  undefined,
+        color:  'white'
+      },
+      
+  },
+  subtitle: {
+    text: '#5454',
+    align: 'left',
+    margin: 10,
+    offsetX: -1,
+    offsetY: 95,
+    floating: false,
+    style: {
+      fontSize:  '25px',
+      fontWeight:  'normal',
+      fontFamily:  undefined,
+      color:  'white'
+    },
+},
+    
     plotOptions: {
       radialBar: {
-        // startAngle: -180,
-        // endAngle: 180,
+        hollow: {
+          margin: 12,
+          size: "60%"
+        },
+        offsetX:90,
+        offsetY:-30,
         dataLabels: {
           name: {
-            fontSize: '20px',
-            color: 'white',
-            offsetY: 120
+            show: false,
           },
           value: {
-            offsetY: 0,
-            fontSize: '22px',
-            color: 'white',
-            formatter: function (val) {
-              return val + "%";
-            }
+            color: "white",
+            fontSize: "15px",
+            offsetY:8,
+            show: true
           }
         }
       }
     },
-    fill: {
-      type: 'gradient',
-      gradient: {
-          shade: 'dark',
-          shadeIntensity: 0.15,
-          inverseColors: false,
-          opacityFrom: 1,
-          opacityTo: 1,
-          stops: [0, 50, 65, 91]
-      },
-    },
+  
     stroke: {
-      dashArray: 0
+      lineCap: "round",
     },
-    labels: [''],
-    };
-    setTimeout(() => {
-      window.dispatchEvent(
-        new Event('resize')
-      );
-    },300);
-  }
+    labels: ["Progress"]
+  };
+  setTimeout(() => {
+    window.dispatchEvent(
+      new Event('resize')
+    );
+  },300);
+}
 }

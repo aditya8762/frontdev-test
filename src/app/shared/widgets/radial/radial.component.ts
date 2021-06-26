@@ -16,66 +16,48 @@ export class RadialComponent implements OnInit {
 
   ngOnInit() {
       this.chartOptions =  {
-        colors: ['#FFD700', '#C0C0C0', '#CD7F32'],
+        // colors: ['#FFD700', '#C0C0C0', '#CD7F32'],
         chart: {
-            type: 'column',
-            inverted: true,
-            polar: true
+            height:360,
+            type: 'bar',
+            backgroundColor:'#111525',
+            borderRadius:8,
         },
+        
         title: {
-            text: 'Total Applications'
+            text: 'Total Applications',
+            style: {
+              color: 'white',
+              fontWeight: 'bold'
+          }
         },
-        tooltip: {
-            outside: true
+        legend:{
+          enabled:false,
         },
-        pane: {
-            size: '85%',
-            innerSize: '20%',
-            endAngle: 270
+        yAxis:{
+            visible:false,
         },
         xAxis: {
-            tickInterval: 1,
+            // lineColor:"fff",
+            categories:[
+                'Total Applications',
+                'Recived Applications',
+                'Rejected',
+                'Selected',
+                'Referals',
+            ],
             labels: {
-                align: 'right',
-                useHTML: true,
-                allowOverlap: true,
-                step: 1,
-                y: 3,
-                style: {
-                    fontSize: '13px'
-                }
-            },
-            lineWidth: 0,
-            categories: [
-                'Norway <span class="f16"><span id="flag" class="flag no">' +
-                '</span></span>',
-                'United States <span class="f16"><span id="flag" class="flag us">' +
-                '</span></span>',
-                'Germany <span class="f16"><span id="flag" class="flag de">' +
-                '</span></span>',
-                'Canada <span class="f16"><span id="flag" class="flag ca">' +
-                '</span></span>',
-                'Austria <span class="f16"><span id="flag" class="flag at">' +
-                '</span></span>'
-            ]
-        },
-        yAxis: {
-            crosshair: {
-                enabled: true,
-                color: '#333'
-            },
-            lineWidth: 5,
-            tickInterval: 10,
-            endOnTick: true,
-            showLastLabel: true
+              style: {
+                color: 'white',
+                fontWeight:"bold",
+              }
+            }
         },
         plotOptions: {
-            column: {
-                stacking: 'normal',
-                borderWidth: 0,
-                pointPadding: 0,
-                groupPadding: 0.1
-            }
+            series: {
+                stacking:'percent',
+                borderRadius:5
+            } as any,
         },
         credits:{
           enabled: false
@@ -83,16 +65,19 @@ export class RadialComponent implements OnInit {
         exporting:{
           enabled: true
         },
-        series: [{
-            name: 'Male',
-            data: [132, 105, 92, 73, 64]
-        }, {
-            name: 'Female',
-            data: [125, 110, 86, 64, 81]
-        }, {
-            name: 'Others',
-            data: [111, 90, 60, 62, 87]
-        }]
+        series: [
+            {
+                type:'bar',
+                // color:'',
+                data:[1,10,40,45,95]
+            },
+            {
+              type:'bar',
+              color:'blue',
+              data:[10,20,30,40,50]
+
+            }
+        ]
     };
     HC_exporting(HighCharts);
     setTimeout(() => {

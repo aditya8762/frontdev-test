@@ -1,6 +1,11 @@
 .chart {
-    max-width: 550px;
-    margin: 1px;
-    border: solid;
-    background-color: #111525;
-  }
+  // max-width: 650px;
+  margin: 1px auto;
+  border: solid;
+  border-radius: 10px;
+  color:rgba(65, 65, 255, 0.863);
+}
+.chart:hover{
+  transform: scale(1.04);
+// color: rgb(247, 247, 247);
+}

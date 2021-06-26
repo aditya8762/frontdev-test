@@ -7,20 +7,15 @@
         <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
             <ul fxLayout="row" fxLayoutGap="20px">
                 <li>
-                    <button mat-icon-button>
-                        <mat-icon>settings</mat-icon>
-                    </button>
-                </li>
-                <li>
-                    <button mat-icon-button>
+                    <button mat-icon-button >
                         <mat-icon>notifications</mat-icon>
                     </button>
+                    <!-- <button mat-icon-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()"></button> -->
                 </li>
                 <li>
                     <div class="text">
-                        <h2>ABC-XYZ</h2>
+                        <span>ABC-XYZ</span>
                     </div>
-                    <!-- <h2>Aditya Pote</h2>     -->
                 </li>
                 <li>
                     <button mat-button [matMenuTriggerFor]="menu">

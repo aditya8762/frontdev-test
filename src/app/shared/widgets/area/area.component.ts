@@ -32,7 +32,7 @@ export class AreaComponent implements OnInit {
         }
       ],
       chart: {
-        height: 350,
+        height: 320,
         type: "area"
       },
       dataLabels: {

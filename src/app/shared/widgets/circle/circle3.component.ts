@@ -4,11 +4,11 @@ import { ApexPlotOptions } from 'ng-apexcharts';
 import { ApexChart } from 'ng-apexcharts';
 
 @Component({
-  selector: 'app-widget-circle1',
+  selector: 'app-widget-circle3',
   templateUrl: './circle.component.html',
   styleUrls: ['./circle.component.scss']
 })
-export class CircleComponent implements OnInit {
+export class Circle3Component implements OnInit {
   
   chartOptions: {
     series: ApexNonAxisChartSeries;
@@ -34,9 +34,9 @@ export class CircleComponent implements OnInit {
         }
       },
       
-      series: [75],
+      series: [40],
       title: {
-        text: 'Total Applications',
+        text: 'Selected Candidates',
         align: 'left',
         margin: 10,
         offsetX: -1,
@@ -51,7 +51,7 @@ export class CircleComponent implements OnInit {
         
     },
     subtitle: {
-      text: '#5454',
+      text: '#545',
       align: 'left',
       margin: 10,
       offsetX: -1,

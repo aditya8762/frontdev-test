@@ -1,9 +1,71 @@
 .mat-card{
     border: solid;
+    border-radius: 15px;
     background-color: #111525;
-    color:white;
+    color:rgba(65, 65, 255, 0.863);
+
   }
-.rad-area .mat-card{
-  border: solid;
-  background-color:black;
+.rad-area,
+.stats-cards{
+  border-radius: 10px;
 }
+.rad-area{
+  height: 75%;
+  width: 85%;
+}
+.mat-card{
+  height: 80%;
+  width: 85%;
+}
+.stats-cards{
+  height: 35%;
+  width: 80%;
+}
+.pie{
+  height: 60%;
+  width: 85%;
+}
+.w{
+  width: 120%;
+}
+.text1,
+.text2,
+.text3,
+.text4{
+  border: solid;
+  height: 50%;
+  width: 25%;
+  text-align: center;
+  background-color:#111525;
+  color:blueviolet;
+  border-radius: 10px;
+}
+.num{
+  text-align: center;
+  color: blueviolet;
+  font-size: 15px;
+}
+.text{
+  color: white;
+}
+.texth{
+  color: rgb(0, 255, 85);
+  font-size: 30px;
+}
+.text1:hover{
+  transform: scale(1.1);
+  background-color: rgba(238, 119, 247, 0.842);
+}
+.text2:hover{
+  transform: scale(1.1);
+  background-color: rgba(237, 133, 245, 0.842);
+}
+.text3:hover{
+  transform: scale(1.1);
+  background-color: rgba(242, 137, 250, 0.842);
+}
+.text4:hover{
+  transform: scale(1.1);
+  background-color: rgba(239, 117, 248, 0.842);
+}
+

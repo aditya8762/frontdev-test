@@ -1,38 +1,61 @@
 <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px" class="stats-cards">
     <mat-card>
-        <app-widget-circle></app-widget-circle>
+        <app-widget-circle1></app-widget-circle1>
     </mat-card>
     <mat-card>
-        <app-widget-circle></app-widget-circle>
+        <app-widget-circle2></app-widget-circle2>
     </mat-card>
     <mat-card>
-        <app-widget-circle></app-widget-circle>
+        <app-widget-circle3></app-widget-circle3>
     </mat-card>
 </div>
 
 <mat-divider></mat-divider>
-<br>
-<br>
-<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="rad-area">
-    <div fxflex=70%>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px" class="rad-area">
+    <mat-card>
         <app-widget-area></app-widget-area>
-    </div>
-    <div fxflex=30%>
-        <mat-card>
-            <app-widget-radial></app-widget-radial>
-        </mat-card>
-    </div>
+    </mat-card>
+    <mat-card>
+        <app-widget-radial></app-widget-radial>
+    </mat-card>
 </div>
 <mat-divider></mat-divider>
-<br>
-<br>
-<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="rad-area">
-    <div fxflex=30%>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px" class="pie">
+    <mat-card fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px" class="w">
+        <div class="text1">
+            <h2 class="text">Users Applied</h2>
+            <p class="num">&#8599; +875</p>
+            <h1 class="texth">6887</h1>
+        </div>
+        <div class="text2"> 
+            <h2 class="text">Referals</h2>
+            <p class="num">&#8599; +675</p>
+            <h1 class="texth">6887</h1>
+        </div>
+        <div class="text3">
+            <h2 class="text">Shares</h2>
+            <p class="num">&#8599; +475</p>
+            <h1 class="texth">6887</h1>
+        </div>
+        <div class="text4">
+            <h2 class="text">Applications</h2>
+            <p class="num">&#8599; +1075</p>
+            <h1 class="texth">6887</h1>
+        </div>
+        <!-- <app-widget-advpie></app-widget-advpie>
+        <app-widget-advpie></app-widget-advpie>
+        <app-widget-advpie></app-widget-advpie> -->
+
+    </mat-card>
+    <mat-card>
+        <app-widget-pie></app-widget-pie>
+    </mat-card>
+    <!-- <div fxflex=30%>
         <app-widget-advpie></app-widget-advpie>
     </div>
     <div fxflex=70%>
         <app-widget-pie></app-widget-pie>
-    </div>
+    </div> -->
 </div>
 <mat-divider></mat-divider>
 <br>

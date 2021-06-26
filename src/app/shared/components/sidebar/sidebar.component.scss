@@ -1,28 +1,35 @@
-// :host {
-//     .mat-icon {
-//         vertical-align: middle;
-//         margin-right: 2rem;
-//     }
-//     .profile-card {
-//         text-align: center;
-//         padding: 0 20px 20px 20px;
-//         img{
-//             width: 100px;
-//             height: 100px;
-//             object-fit: cover;
-//             border-radius: 50%;
-//         }
-//     }
-// }
 .mat-list-item{
     background-color: #111525;
-    color: white;
+    color:white;
+    position: relative;
 }
-// h2.mat-subheader{
-//     // color: rgb(142, 142, 180);
+// .mat-list-item::before{
+//     content: '';
+//     height: 100%;
+//     width: 5px;
+//     top: 0;
+//     right: 0;
+//     position: absolute;
+//     background-color: chartreuse;
+//     opacity: 1;
+// }
+// .mat-list-item:hover::before{
+//     opacity: 1;
 // }
 .mat-icon {
-            vertical-align: middle;
-            margin-right: 1rem;
-            padding: 9px;
-        }
+    vertical-align: middle;
+    margin-right: 1rem;
+    padding: 9px;
+    color: white;
+}
+.mat-list-item:hover,
+.mat-list-item:focus-within {
+    transform: scale(1.08);
+    color:rgb(166, 166, 216);
+    border-color: burlywood;
+}
+.mat-icon:hover{
+    color: rgb(219, 135, 38);
+    transform: rotate(-25deg);
+    font-size: 2rem;
+}

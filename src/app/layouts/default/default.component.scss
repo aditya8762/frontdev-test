@@ -3,20 +3,38 @@
     flex-direction: column;
     height: 100%;
 }
-mat-drawer{
+.mat-drawer{
     color:white;
     background-color: #111525;
-}
 
-mat-drawer-container {
+
+}
+// .mat-drawer::before{
+//     content: '';
+//     height: 100%;
+//     width: 4px;
+//     top: 0;
+//     right: 0;
+//     position: absolute;
+//     background-color: chartreuse;
+//     opacity: 0;
+// }
+// .mat-drawer:hover::before{
+//     opacity: 1;
+// }
+
+
+.mat-drawer-container {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     background-color:#111525;
     color: white;
-
 }
 
-mat-drawer-content {
-    padding: 2rem;
+.mat-drawer-content {
+    padding: 3rem;
+    height: 100%;
 }
 #sidenavContainer{
     margin-top: 64px;
@@ -26,5 +44,5 @@ mat-drawer-content {
     width: 70px;
 }
 #sidenav.menu-open{
-    width: 240px;
+    width: 200px;
 }

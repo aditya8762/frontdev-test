@@ -6,6 +6,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
@@ -14,6 +15,8 @@ import { RouterModule } from '@angular/router';
 import { RadialComponent } from './widgets/radial/radial.component';
 import { HighchartsChartModule } from 'highcharts-angular';
 import { CircleComponent } from './widgets/circle/circle.component';
+import { Circle2Component } from './widgets/circle/circle2.component';
+import { Circle3Component } from './widgets/circle/circle3.component';
 
 import { BrowserModule } from "@angular/platform-browser";
 import { NgApexchartsModule } from "ng-apexcharts";
@@ -27,6 +30,8 @@ import { AdvpieComponent } from './widgets/advpie/advpie.component';
     SidebarComponent,
     RadialComponent,
     CircleComponent,
+    Circle2Component,
+    Circle3Component,
     PieComponent,
     AreaComponent,
     AdvpieComponent
@@ -43,7 +48,8 @@ import { AdvpieComponent } from './widgets/advpie/advpie.component';
     RouterModule,
     HighchartsChartModule,
     BrowserModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    MatBadgeModule
 
   ],
   exports: [
@@ -52,6 +58,8 @@ import { AdvpieComponent } from './widgets/advpie/advpie.component';
     SidebarComponent,
     RadialComponent,
     CircleComponent,
+    Circle2Component,
+    Circle3Component,
     PieComponent,
     AreaComponent,
     AdvpieComponent

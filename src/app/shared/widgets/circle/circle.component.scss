@@ -1,6 +1,10 @@
-.chart {
-    // padding: 100px;
-    // max-width: 300px;
-    // margin: 0.5rem auto;
-    color:white;
-  }
+.chart{
+  padding: 1rem;
+  // color: chartreuse;
+  // background-color: rgba(0, 0, 255, 0.842);
+  border-radius: 10px;
+}
+.chart:hover{
+  background-color: rgba(226, 19, 245, 0.842);
+  transform: scale(1.07);
+}

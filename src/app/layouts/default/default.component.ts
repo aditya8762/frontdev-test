@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultComponent implements OnInit {
 
-  sideBarOpen= true;
-  contentMargin = 240;
+  sideBarOpen= false;
+  contentMargin = 70;
 
   constructor() { }
 
@@ -21,7 +21,7 @@ export class DefaultComponent implements OnInit {
       this.contentMargin=70;
     }
     else{
-      this.contentMargin=240;
+      this.contentMargin=200;
     }
   }
 }

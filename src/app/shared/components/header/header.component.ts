@@ -8,6 +8,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Output() toggleSideBarForMe: EventEmitter<any> = new EventEmitter();
+  hidden = false;
+  
 
   constructor() { }
 
@@ -15,7 +17,8 @@ export class HeaderComponent implements OnInit {
   toggleSideBar() {
     this.toggleSideBarForMe.emit();
   }
-
-
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
 }
  

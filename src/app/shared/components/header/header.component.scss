@@ -13,3 +13,8 @@ ul li{
 .text{
     padding: 0.3rem;
 }
+.mat-icon:hover,
+.mat-icon:focus-within{
+    color: rgb(7, 143, 255);
+    transform: rotate(30deg);
+}
