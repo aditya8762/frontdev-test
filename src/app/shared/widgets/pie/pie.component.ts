@@ -22,7 +22,7 @@ export class PieComponent implements OnInit {
       series: [25,5,15,55],
       chart: {
         type: "donut",
-        height: 330,
+        height: 230,
         width:400,
       },
       labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],

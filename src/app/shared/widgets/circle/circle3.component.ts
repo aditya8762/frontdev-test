@@ -26,7 +26,7 @@ export class Circle3Component implements OnInit {
   ngOnInit() {
     this.chartOptions = {
       chart: {
-        height: 180,
+        height: 160,
         width:320,
         type: "radialBar",
         toolbar:{
